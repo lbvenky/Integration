@@ -10,7 +10,7 @@ pipeline {
     }
     stage('Print File') {
       steps {
-        sh 'grep "FirstFile.txt"'
+        sh 'grep -ril "FirstFile.txt" .'
       }
     }
   }
