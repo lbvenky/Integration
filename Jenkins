@@ -8,5 +8,10 @@ pipeline {
         sh 'touch FirstFile.txt'
       }
     }
+    stage('Print File') {
+      steps {
+        sh 'grep "FirstFile.txt"'
+      }
+    }
   }
 }
